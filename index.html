@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Music Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 100px;
+        }
+        h1 {
+            color: white;
+        }
+        #music-list {
+            display: flex; /* Mengubah display menjadi flex */
+            align-items: center; /* Posisikan elemen secara vertikal ke tengah */
+            flex-direction: column; /* Mengubah arah flex menjadi kolom */
+            width: 300px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px; /* Membuat jarak antara gambar dan teks */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokurmon Music Player!</h1>
+        <div id="music-list">
+            <img src="https://pokurmon.github.io/music-player/source/image/echoes-of-blue-archive.jpg">
+            <div>
+                <p>Echoes of Blue Archive</p>
+                <button class="mulai-lagu" data-link="https://www.contohlinkkhusus1.com">Mulai Lagu dan dengarkan</button> <!-- Tombol "Mulai Lagu" untuk lagu 1 -->
+                <!-- Tambahkan tombol "Mulai Lagu" untuk lagu-lagu lainnya jika diperlukan -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Ambil semua tombol "Mulai Lagu"
+        const buttons = document.querySelectorAll(".mulai-lagu");
+        
+        // Tambahkan event listener untuk setiap tombol
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                // Ambil link dari atribut data-link
+                const link = this.getAttribute("data-link");
+                // Alihkan pengguna ke link yang terkait dengan tombol yang ditekan
+                window.location.href = link;
+            });
+        });
+    </script>
+</body>
+</html>
