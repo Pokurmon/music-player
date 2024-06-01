@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+    h1{
+      background-color: Black;
+      text-align: center;
+      color: white;
+    }
+    </style>
+    <h1>Echoes of Blue Archive</h1> <!-- Ini adalah judul/h1 -->
+</head>
+<body>
+    <iframe id="musicPlayer" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1835205396&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    <div id="lyrics" style="margin-top: 20px;"> <!-- Ini adalah bagian khusus untuk lirik lagu -->
+        <h2>Lirik Lagu</h2>
+        <p>
+            In the vast blue sky, we chase our dreams,<br>
+            With books in hand, the adventure begins.<br>
+            Classes are over, it's time to fight,<br>
+            In Blue Archive, we all unite.<br><br>
+
+            Oh, Blue Archive, where stories never fade,<br>
+            Here we learn, battle, and laugh together.<br>
+            With friends by our side, we're never alone,<br>
+            In Blue Archive, we make history known.<br><br>
+
+            Walking through campus, filled with laughter and jest,<br>
+            Every corner holds memories that are the best.<br>
+            From classrooms to battlefields, we dash,<br>
+            Carrying hope and courage in our hearts' stash.<br><br>
+
+            Oh, Blue Archive, where stories never fade,<br>
+            Here we learn, battle, and laugh together.<br>
+            With friends by our side, we're never alone,<br>
+            In Blue Archive, we make history known.<br><br>
+
+            Under the same sky, we make our vow,<br>
+            To protect dreams and a bright future now.<br>
+            With weapons in hand, we won't give in,<br>
+            We are heroes, in Blue Archive's tale we spin.<br><br>
+            
+            Hoshino leads with a smile, in the old library's charm,<br>
+            Nonomi and Shiroko find secrets that disarm.<br>
+            Serika pens legends, with a pen in hand,<br>
+            In Blue Archive, we're explorers of this land.<br><br>
+            Ibuki and Iroha, whispering through the pages,<br>
+            Seeking unique powers and magic for the ages.<br>
+            With Ako and Iori's spirit that never dims,<br>
+            We'll overcome every challenge that life brings.<br><br>
+            Chinatsu and Aru in the secret lab's light,<br>
+            Creating discoveries that will take flight.<br>
+            Mutsuki and Kayoko learn, create, and innovate,<br>
+            In Blue Archive, we lead the revolution's fate.<br><br>
+            Haruka and Haruna, with every experiment we face,<br>
+            We're closer to victory in this place.<br>
+            With courage and knowledge in our hands,<br>
+            We'll unlock a future that's grand.<br><br>
+            Azusa and Koharu, running on the field,<br>
+            Carrying spirit and dreams that won't yield.<br>
+            Tsubaki and Mimori, with laughter so sweet,<br>
+            In Blue Archive, we never admit defeat.<br><br>
+            Saya and Kasumi, whispering through the pages,<br>
+            Seeking unique powers and magic for the ages.<br>
+            With Hina and Yuzu's spirit that never dims,<br>
+            We'll overcome every challenge that life brings.<br><br>
+            Shiroko and Hifumi, in the secret lab's glow,<br>
+            Creating discoveries, the world will know.<br>
+            Neru and Asuna learn, create, and innovate,<br>
+            In Blue Archive, we lead the revolution's fate.<br><br>
+            Izumi and Akari, sharing their books so wide,<br>
+            Delving into knowledge that forever resides.<br>
+            Fuuka and Juri, with strategy and tact,<br>
+            In Blue Archive, we're never outmatched.<br><br>
+            Sena and Megu, with every challenge we meet,<br>
+            We learn, we grow, we become elite.<br>
+            With friendship and unity in our heart's core,<br>
+            We'll create the future we've been longing for.<br><br>
+            And as the sun sets, we take our rest,<br>
+            Gazing at the stars, we promise to do our best.<br>
+            For in Blue Archive, the adventure never ends,<br>
+            Together, we'll keep on advancing around the bends.<br><br>
+        </p>
+    </div>
+
+    <script>
+        // Pause the music player when the page loses focus
+        window.onblur = function() {
+            var iframe = document.getElementById('musicPlayer');
+            iframe.contentWindow.postMessage('{"event":"pause"}', '*');
+        };
+    </script>
+</body>
+</html>
